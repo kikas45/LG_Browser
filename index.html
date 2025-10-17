@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Browser</title>
+  <link rel="stylesheet" href="mystyle.css" />
+</head>
+<body>
+
+  <!-- Progress Bar -->
+  <div id="progressBar"></div>
+
+  <!-- Browser View -->
+  <iframe id="webview"></iframe>
+
+  <!-- Hamburger -->
+  <button id="hamburger">☰</button>
+
+  <!-- URL Dialog -->
+  <dialog id="urlDialog">
+    <div id="dialogContent">
+
+      <div class="dialogHeader">
+        <h4 class="dialogTitle">✅ Enter Website Address</h4>
+        <button id="closeBtn" class="closeBtn">✖</button>
+      </div>
+
+      <input id="urlInput" type="text" placeholder="https://example.com" />
+
+      <div id="dialogButtons">
+        <button id="clearBtn">CLEAR</button>
+        <button id="saveBtn">SAVE</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Error Overlay -->
+  <div id="errorScreen">
+    <h2>⚠ Page Load Failed</h2>
+    <p>Sorry, we couldn’t load the page.</p>
+    <ul>
+      <li>No internet connection</li>
+      <li>The website is temporarily down</li>
+      <li>A typo in the web address</li>
+    </ul>
+    <button id="errorBtn">🔄 Retry</button>
+  </div>
+
+  <script src="myscript.js"></script>
+</body>
+</html>

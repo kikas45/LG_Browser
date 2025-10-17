@@ -1,0 +1,12 @@
+{
+  "id": "com.mooreadvice.lgminibrowser",
+  "version": "1.0.0",
+  "vendor": "Moore Advice",
+  "type": "web",
+  "main": "index.html",
+  "title": "LG Mini Browser",
+  "icon": "icon.png",
+  "bgColor": "#000000",
+  "uiRevision": 2,
+  "requiredPermissions": ["internet", "network"]
+}
