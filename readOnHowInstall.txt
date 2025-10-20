@@ -1,0 +1,6 @@
+ensure to have your account ready from LG and connected it webOs.
+
+use command promyt with rifght folder :   cd "C:\Users\Admin\Desktop\All Broswers\LGBrowser\LGBrowser"
+
+
+run this :  ares-package .

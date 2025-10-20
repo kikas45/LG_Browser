@@ -11,7 +11,7 @@ const errorBtn = document.getElementById('errorBtn');
 
 // Load saved URL or default
 window.addEventListener('DOMContentLoaded', () => {
-  const savedUrl = localStorage.getItem('lastUrl') || 'https://example.com/';
+  const savedUrl = localStorage.getItem('lastUrl') || 'https://cloudapp.web-adm.in/public/CLO/PBN_HQ/App/';
   iframe.src = savedUrl;
   urlInput.value = savedUrl;
 });
@@ -32,11 +32,13 @@ hamburger.addEventListener('click', () => {
 // Close dialog
 closeBtn.addEventListener('click', () => urlDialog.close());
 
+
 // Clear saved URL
 clearBtn.addEventListener('click', () => {
-  urlInput.value = 'https://example.com/';
+  urlInput.value = 'https://cloudapp.web-adm.in/public/CLO/PBN_HQ/App/';
   localStorage.removeItem('lastUrl');
 });
+
 
 // Save + load
 saveBtn.addEventListener('click', () => loadUrl(urlInput.value.trim()));
